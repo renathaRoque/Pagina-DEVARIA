@@ -1,0 +1,40 @@
+/*Estlos do header*
+abra o header co chaves para o css enttender que voce só vai alterar o qque está dentro do header*/
+header .link-logo{
+    display: block;
+    padding: 20px 25px 15px 10px;   /* é exatamente nessa ordem: 1°px é para em cima, 25px lado dirito, 15px em baixo e 10 para lado equerdo da borda*/
+    border-bottom: 1px solid #25cdb3; /* aqui é a cor da borda do nosso logo*/
+}
+header nav ul{
+    padding: 0%;   /*  centralizando a minha nav*/
+    text-align: center;   /*para tudo o que está dentro da minha nav ficar no centro*/
+}
+header nav ul li{
+    display: inline-block;   /*para deixar os itens da lista da minha nav alinhado um do lado do outro, tudo na mesma linha*/ 
+}
+header nav ul li:not(:last-child){/*esse lest child é uma forma de ignorar o ultimo filho, é usado para não mexer no ultimo item da listanesse caso */
+    margin-right:15px;
+}
+.menu li a{
+    color: rgb(18, 183, 224);
+    text-decoration: none;  /*para dizer que não quero linha nas palavras da minha nav, none significa nenhuma*/
+
+}
+.menu li a:hover{
+    color:rgb(58, 196, 40);
+    text-decoration: underline;
+
+}
+@media screen and (min-width: 992px) {    /*este é para indicar que este site pode ser aberto em telas de até 992px*/
+    header {
+        position: relative;
+    }
+
+.menu{   /*aqui é para colocar as opções da nav para o lado direito da tela*/
+
+    position: absolute;
+    right: 2%;
+    top: 18%;
+}
+}                               
+  

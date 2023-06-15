@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fale Conosco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/header.css" /> <!-- aqui a gente está basicamente indicando as configurações da nossa pagina que ela receeberá uma estilização em CSS na pasta que criamos em public/css/index.css estnão estamos dizendo que temos uma folha de estilo neste arquivo-->
+	<link rel="stylesheet" href="public/css/devaria.css"/>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="link-logo">
+            <img src="public/fotos/logo-devaria.svg" alt="logo" />
+            </a>
+        <nav class="menu">
+            <ul>
+                <li><a href= "index.html">HOME</a></li>
+                <li><a href="Professores.html">PROFESSORES</a></li>
+                <li><a href="FaleConosco.html">FALE CONOSCO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1> Nossos Professores</h1>
+        <h2>Para mandar uma mensagem para nós prencha este formulário e clique em enviar:</h2>
+        <section>
+            <form action="index.html">
+                <p>
+                    <lable>Nome:</lable><input type="text" name="Nome"/>
+                </p>
+                <p>
+                    <label>E-mail:</label><input type="text" name="Email" />
+                </p>
+                <p>
+                    <lable>Comentário:</lable>
+                    <textarea name="Comentário" rows="4" cols="50"></textarea>
+                </p>
+            </form>
+        </section>
+    </main>
+   <p>
+    <lable>Sexo:</lable>
+    <input type="radio" name="Sexo" /><lable>Feminino</lable>
+    <input type="radio" name="Sexo" /><lable>Masculino</lable>
+   </p>
+   <p>
+    <lable>Aonde nos conheceu?</lable>
+    <select name="Conheceu">
+        <option select>Youtube</option>
+        <option>Google</option>
+        <option>Amigos</option>
+        <option>Outros</option>
+    </form>
+    </select>
+   </p>
+</body>
+</html>

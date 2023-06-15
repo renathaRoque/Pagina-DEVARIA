@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Devaria é uma formação para pessoas que não possuem 
+	conhecimento em programação e querem se tornar um bom programador">
+	<meta name="keywords" content="devaria, programação, aulas ao vivo, formação de graça">
+	<meta name="author" content="Renatha Roque" />
+	<meta http-equiv="refresh" content="50"/>
+    <meta name="viewport" content="widtth=device-width, initial-scale=1.0"/> <!-- essa meta tag permite abrir o site em todas as telas de aparelho, ela corrige o zom e o Tamanho das palavras -->
+    <link rel="stylesheet" href="public/css/header.css" /> <!-- aqui a gente está basicamente indicando as configurações da nossa pagina que ela receeberá uma estilização em CSS na pasta que criamos em public/css/index.css estnão estamos dizendo que temos uma folha de estilo neste arquivo-->
+	<link rel="stylesheet" href="public/css/devaria.css" /><!-- aqui estou linkando a estilização que eu fiz no meu devaria.css, basicamente a mesma coisa que a de cima-->
+    <link rel="stylesheet" href="public/css/index.css" />
+</head>
+<body>
+    <!-- a class é indicada pelo sinal de ponto ".", já o "id" é sinalidzada pelo sinal de # e do lado da #você poe o que está escrito dentro do id como abaixo, que no id está escrito "link-home"-->
+    <!--no caso do .color-red ffoi aplicado um ponto "." para indicar ao css que ele com a class dele que esta logo abaixo-->
+    <header>
+        <a href="index.html" class="link-logo">
+        <img src="public/fotos/logo-devaria.svg" alt="logo" />
+        </a>
+        <nav class="menu">
+            <!--o id baixo serve para anexar um link a palavra, pois quando clicar na palavra, logo irá direcionar ao link-->
+            <ul>
+                <li><a href="Professores.html" id="link">PROFESSORES</a></li>
+                <li><a href="FaleConosco.html" id="link-home">FALE CONOSCO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="title"> Seja mais um Dev no mercado de Desenvolvedores!</h1>
+            <section>
+                    <figure>
+                    <img src="public/fotos/sobre a formação.png" width="1000" alt="Devaria - Olá Mundo!" />
+                    <figcaption>Foto Olá Mundo Devária!</figcaption>
+                    </figure>
+            </section>
+            <section>
+                    <article>
+                        <h2>Bem vindos a Devaria</h2>
+                    
+                    
+                    </article>
+            </section>
+            <section>
+                <p>
+                      <!-- esse <abbr> server para quando passar o mouse em cima da palavra ela terá uma legenda-->
+                <h3>Para os <abbr title="Developers">DEVs</abbr> saberem, a Devaria usa Microsoft Azure</h3>
+                <blockquote cite="https:azure.microsoft.com/pt-br/solutions/">
+                Resolva os problemas de negócios com combinações comprovadamente eficientes de 
+                produtos e serviços do Azure.
+                </blockquote>
+                </p>
+            </section>
+    </main>
+
+    <footer>
+          <section>
+            <span>contato@devaria.com.br</span><br/>
+            <span>Conhecça nosso canal no youtube</span>
+          </section>
+    </footer>
+</body>
+</html>
