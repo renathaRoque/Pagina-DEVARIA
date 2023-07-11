@@ -1,10 +1,33 @@
-.color-red{
-    color: green;
+main {
+    text-align: center;
 }
-#link-home{
-    color:rgb(20, 169, 206);
-}
-#link{
-    color: rgb(19, 240, 11);
+.cover-container figure img {
+    width: 100%;
 }
 /*comentarios*/
+main h3.title {
+    font-size: 1.2em; /*diminuiu o tamanho da fonte do elemento que esta no iNDEX.html lá em h3*/
+}
+ main section abbr /*esta dando cor ao que esta dentro da main, em section, em abbr*/{
+        color: #25cbd3;
+}
+h1.title {
+    margin: 40px auto 20px;
+}
+.text-justify {  /* Para a verssão mobile ficou bom deixar assim. sdeixou centralizado (peelomenos no modo iphone 6,7 e8)  o textinho que eu escrevi no paragrafo ddo h3*/
+    text-align: justify;  
+}
+/*Vamos abrir uma media query para vizualizar o projettto em desktop
+dai usamos o @meddia pra chamar o SCREEN que significa tela, informamos que ele tem uma limite de ate 992pixels.
+
+vamos usar o seleetor já usado anteriormente ".cover-container figure img" no caso para não deixar nossa imagem no 100% paara 
+não ficar extremamente grande*/
+@media screen (min-width: 992px) {
+    .cover-container figure img {
+    width: 40%;
+    /*definindo o tamanho da imagem em pixels*/
+}
+   main .section-azure blockquote {
+    width: 70%;
+   }
+} 

@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A Devaria é uma formação para pessoas que não possuem 
 	conhecimento em programação e querem se tornar um bom programador">
 	<meta name="keywords" content="devaria, programação, aulas ao vivo, formação de graça">
 	<meta name="author" content="Renatha Roque" />
 	<meta http-equiv="refresh" content="50"/>
     <meta name="viewport" content="widtth=device-width, initial-scale=1.0"/> <!-- essa meta tag permite abrir o site em todas as telas de aparelho, ela corrige o zom e o Tamanho das palavras -->
-    <link rel="stylesheet" href="public/css/header.css" /> <!-- aqui a gente está basicamente indicando as configurações da nossa pagina que ela receeberá uma estilização em CSS na pasta que criamos em public/css/index.css estnão estamos dizendo que temos uma folha de estilo neste arquivo-->
 	<link rel="stylesheet" href="public/css/devaria.css" /><!-- aqui estou linkando a estilização que eu fiz no meu devaria.css, basicamente a mesma coisa que a de cima-->
+    <link rel="stylesheet" href="public/css/footer.css" />
+    <link rel="stylesheet" href="public/css/header.css" /> <!-- aqui a gente está basicamente indicando as configurações da nossa pagina que ela receeberá uma estilização em CSS na pasta que criamos em public/css/index.css estnão estamos dizendo que temos uma folha de estilo neste arquivo-->
     <link rel="stylesheet" href="public/css/index.css" />
+    
 </head>
 <body>
     <!-- a class é indicada pelo sinal de ponto ".", já o "id" é sinalidzada pelo sinal de # e do lado da #você poe o que está escrito dentro do id como abaixo, que no id está escrito "link-home"-->
@@ -24,6 +25,7 @@
         <nav class="menu">
             <!--o id baixo serve para anexar um link a palavra, pois quando clicar na palavra, logo irá direcionar ao link-->
             <ul>
+                <li><a href= "index.html">HOME</a></li>
                 <li><a href="Professores.html" id="link">PROFESSORES</a></li>
                 <li><a href="FaleConosco.html" id="link-home">FALE CONOSCO</a></li>
             </ul>
@@ -32,9 +34,9 @@
 
     <main>
         <h1 class="title"> Seja mais um Dev no mercado de Desenvolvedores!</h1>
-            <section>
+            <section class="cover-container">
                     <figure>
-                    <img src="public/fotos/sobre a formação.png" width="1000" alt="Devaria - Olá Mundo!" />
+                    <img src="public/fotos/fotohome.png" width="100%" alt="Devaria - Olá Mundo!" /> <!-- Aqui não foi uma tarefa muito facíl, precisei rever o video para arrumar meu footer, o que estava acontecendo é que a imagem estava atrapalhando por conta da sua largura, antes eu deixei como "1000" mas para estava imapactando no meu footer o deixava totalmente desproporcional, revendo o video, notei que ele deixou em "100%" pra pegar 100% a LARGURA da da tela, deu certo, e logo corrigiu meu footer, estou voltando a sorrir novamente.-->
                     <figcaption>Foto Olá Mundo Devária!</figcaption>
                     </figure>
             </section>
@@ -45,11 +47,11 @@
                     
                     </article>
             </section>
-            <section>
+            <section class="section-azuere">
                 <p>
                       <!-- esse <abbr> server para quando passar o mouse em cima da palavra ela terá uma legenda-->
                 <h3>Para os <abbr title="Developers">DEVs</abbr> saberem, a Devaria usa Microsoft Azure</h3>
-                <blockquote cite="https:azure.microsoft.com/pt-br/solutions/">
+                <blockquote class="text-justify" cite="https:azure.microsoft.com/pt-br/solutions/">
                 Resolva os problemas de negócios com combinações comprovadamente eficientes de 
                 produtos e serviços do Azure.
                 </blockquote>

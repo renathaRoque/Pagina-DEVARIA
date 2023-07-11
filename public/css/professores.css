@@ -1,0 +1,11 @@
+
+@media screen (min-width: 992px) {
+    .section-professores div img {
+        width: 40%;
+        /*definindo o tamanho da imagem em pixels*/
+    }
+     
+    } 
+    .cover-container, .section-video {
+    display:inline-block; } /*cdefinindo o tamanho do video para ficar ao lado da imagem*/
+

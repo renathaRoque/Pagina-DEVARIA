@@ -1,0 +1,15 @@
+/* estilos relacionais do rodapá*/   /* */
+footer{
+    text-align: center;    /* centralizando o texto*/
+    border-top: 1px solid #f0f5ff;
+    padding: 20px;  /*borda interna */
+    width: 75%;
+    margin: auto;
+    text-transform: lowercase;
+}
+footer section span:first-child {    /* detalhe, um espaço a mais do necessário, faz toda a diferença no código*/
+    color: #5e49ff; 
+}
+footer section span:last-child {
+    color: #3bd42d;
+}
