@@ -21,3 +21,15 @@ body{
 h1.title /*todo h1 qe tenha a tag title*/ {
     margin: 40px auto 20px;
 }
+
+.text-justify{
+    text-align:justify;
+}
+.text-center {
+    text-align: center;
+}
+@media screen (min-width: 992px) {
+    .width-50pct-desktop {
+        width: 50% !important;
+    }
+}
