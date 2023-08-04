@@ -28,4 +28,16 @@
             width: 50%; 
             /*serve para ajustar a tamanho de tela especifico*/
         }
+        #content-container article {
+            margin:0 auto 10px;
+            text-align: center;
+           
+        }
+      .container h2 p {
+        margin:2px auto 10px;
+      }
+      .section-video {
+        padding: 40px;
+      }
     }
+   

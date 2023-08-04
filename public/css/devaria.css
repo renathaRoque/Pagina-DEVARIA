@@ -10,13 +10,14 @@ body{
     background-color:  #1c0c3f;
     font-family: sans-serif;  /*font letras*/
     color: white;
-    margin: 0px;
+    margin: 15px;      /*paragrafos das frases da pagina professores*/
 }
 
 .title {
     padding: 0 20px;
     font-size: 1.75em;
     text-transform: uppercase;
+    text-align: center;
 }
 h1.title /*todo h1 qe tenha a tag title*/ {
     margin: 40px auto 20px;
@@ -30,6 +31,8 @@ h1.title /*todo h1 qe tenha a tag title*/ {
 }
 @media screen (min-width: 992px) {
     .width-50pct-desktop {
-        width: 50% !important;
+    
+        width: 50% !important; /*o important a para sobressaltar a importancia do que foi aplicado
+        como no exemplo a baixo que foi priorizado a largura para dasktop 50% */
     }
 }
