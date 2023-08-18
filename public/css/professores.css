@@ -65,7 +65,7 @@
    }
  .title-video{
   text-align: center;
-  color: #e7f3e5;
+  color: #cfebe6;
   font-size-adjust: inherit;
   border-radius: 3px;
   border-color: #25cbd3;
@@ -73,5 +73,22 @@
 }
 .title-text-center {
   color: rgb(18, 183, 224);
+}
+#video {
+   
+  text-align: center;
+    padding: 2rem; /*espaçamento da frase "conheça a devaria..." dentro do quadro verde*/
+    border-radius: 12px;
+}
+iframe {
+  /*quando colocamos uma TAG do html não precisa de . diferente as classes*/
+  border: white 2px solid;
+  border-radius: 10px;
+}
+#video-container {
+  width: 100%;
+  /* para lembrar a importntancia desta section; background: red; adro verde*/
+  display: flex;
+  justify-content: center;  /* para centralizar horizontalmente o video*/
 }
  

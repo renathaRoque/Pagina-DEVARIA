@@ -31,16 +31,7 @@ h1.title /*todo h1 qe tenha a tag title*/ {
     text-align: center;
     
 }
-#video {
-    width: 100%;
-    text-align: center;
-    max-height: 92%;
-    display: inline-block;
-    border-radius: 3px;
 
- 
-    
-}
 @media screen and (min-width: 992px) {
     .width-50pct-desktop {
     
