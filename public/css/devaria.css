@@ -25,11 +25,23 @@ h1.title /*todo h1 qe tenha a tag title*/ {
 
 .text-justify{
     text-align:justify;
+     text-align: center;
 }
 .text-center {
     text-align: center;
+    
 }
-@media screen (min-width: 992px) {
+#video {
+    width: 100%;
+    text-align: center;
+    max-height: 92%;
+    display: inline-block;
+    border-radius: 3px;
+
+ 
+    
+}
+@media screen and (min-width: 992px) {
     .width-50pct-desktop {
     
         width: 50% !important; /*o important a para sobressaltar a importancia do que foi aplicado
