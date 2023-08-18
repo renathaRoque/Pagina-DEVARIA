@@ -1,11 +1,77 @@
 
-@media screen (min-width: 992px) {
-    .section-professores div img {
-        width: 40%;
-        /*definindo o tamanho da imagem em pixels*/
+  
+    #content-container{
+        padding: 20px;   /*deu um espço a esquerda na imagem pois o padin é como um paragrafo*/
+        
     }
-     
-    } 
-    .cover-container, .section-video {
-    display:inline-block; } /*cdefinindo o tamanho do video para ficar ao lado da imagem*/
 
+    #content-container h2.title {
+        font-size: 1.5em; /*esta mexendo no estilo do h2*/
+        }
+   #content-container > div img{
+        width: 98%; /*tamanho da imagem*/
+        border-radius: 20px;  /* fez com que a imagem dos professores ficasse arredondada*/
+        border: 5px double;
+        
+    }
+    
+        /*o sinal de > permite voce selecionar o filho maior da classe, porque no caso dessa classe .container, ela tem duas divs, então
+        esse sinal > seleconando apenas a primeira div
+        /*definindo o tamanho da imagem em pixels*/
+  
+    
+    /*.cover-container, .section-video {
+    display:inline-block; 
+    width: 100%;
+    } cdefinindo o tamanho do video para ficar ao lado da imagem*/
+
+    @media screen and (min-width:992px){
+        #content-container > div img {
+            width: 50%; 
+            
+            /*serve para ajustar a tamanho de tela especifico*/
+        }
+        #content-container article {
+            margin:0 auto 20px;
+            text-align: center;
+           
+        }
+      .container h2 p {
+        margin: 20px auto 10px;
+        
+      }
+    
+    }
+    .text-justify-width-50pct-desktop {
+      margin:0 auto 20px;  /*vai modificar o tamanho dos elementos lá na minha tela, esse auto px quem vai conduzir a largura, me deu trabalhoo */
+      height: 20%; 
+      text-align: center;
+      color: #25cbd3;
+      width: px;
+    }
+    .center-width-50pct-desktop {
+      text-align: center;
+      width: 98%;
+      
+      
+    }
+    .table-width-50pct-desktop {
+      text-align: center;
+      width: 28px auto;
+    }
+      
+   .width-50pct-desktop {
+    margin: 15px auto;  /*não mexer nessa margin, foi dificil alinhar as informações da tag table*/
+   }
+ .title-video{
+  text-align: center;
+  color: #e7f3e5;
+  font-size-adjust: inherit;
+  border-radius: 3px;
+  border-color: #25cbd3;
+ 
+}
+.title-text-center {
+  color: rgb(18, 183, 224);
+}
+ 

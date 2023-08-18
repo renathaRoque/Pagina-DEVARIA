@@ -2,7 +2,7 @@
 abra o header co chaves para o css enttender que voce só vai alterar o qque está dentro do header*/
 header .link-logo{
     display: block;
-    padding: 20px 25px 15px 10px;   /* é exatamente nessa ordem: 1°px é para em cima, 25px lado dirito, 15px em baixo e 10 para lado equerdo da borda*/
+    padding: 1px 25px 15px 10px;   /* é exatamente nessa ordem: 1°px é para em cima, 25px lado dirito, 15px em baixo e 10 para lado equerdo da borda*/
     border-bottom: 1px solid #25cdb3; /* aqui é a cor da borda do nosso logo*/
 }
 header nav ul{

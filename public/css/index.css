@@ -1,6 +1,4 @@
-main {
-    text-align: center;
-}
+
 .cover-container figure img {
     width: 100%;
 }
@@ -22,12 +20,17 @@ dai usamos o @meddia pra chamar o SCREEN que significa tela, informamos que ele 
 
 vamos usar o seleetor já usado anteriormente ".cover-container figure img" no caso para não deixar nossa imagem no 100% paara 
 não ficar extremamente grande*/
-@media screen (min-width: 992px) {
+.frase-Azure {
+    text-align: center;
+    }
+@media screen and (min-width: 992px) {
     .cover-container figure img {
     width: 40%;
     /*definindo o tamanho da imagem em pixels*/
 }
+
+
    main .section-azure blockquote {
     width: 70%;
    }
-} 
+}
