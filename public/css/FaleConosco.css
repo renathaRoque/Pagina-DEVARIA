@@ -1,0 +1,94 @@
+/*estilos relacionados a pagina de fale conosco*/
+.sub-title {
+    margin: 0 20px;
+}
+main .contact-form > div/*aplicar esse estilo somente para as div de primeiro nivel dentro do contact form é isso que esse main .contact-form > div quer dizer*/
+{   margin: 15px 0px; /*aplicar 15 px esta aplicando para superior e inferior que significa em cima em em baixo 
+    e o 0px para a esquerda e a direita, isso significa que eu não preciso escrever 4 vezes para cada canto;*/
+
+
+}
+main .contact-form > div label{
+    display: block;   /*vai quebrar a regra da div centralizada e vai permitir que os titulos como NOME E-MAIL... ficarão em cima da barra de imput*/
+    margin-bottom: 10px; /*margin bottom é para margin de baixo*/
+
+}
+main .contact-form input, /*vamos mexer só nos input, ai nesse caso, invês de abrir uma classe para cada input, é mais facíl por a TAG só que sem o . porque não é uma classe*/
+main .contact-form select, /*é imporrante separar os elementos,tags ou classes com as  virgulas*/
+main .contact-form textarea
+{   width: 90%;
+    padding: 5px 15px; /* deu um espaço de preenchimento dentro do imput como uma margin*/
+    outline-color:#3bd42d; /* outline-color é a cor da linha que pega a borda inteira do imput indicando que você está inserindo alguma informação naquele input*/
+    /* o outline aplicará coloração só para os input a caixa de comentário deste formulário não é um input, é um TEXTAREA onde vai mais informações que um imput*/
+
+}
+main .contact-form select{
+    width: 90%;
+}
+/* travar o espaçaento o texte-area que é aonde vai meus comentárioslá no formulário*/
+main .contact-form textarea{
+    resize: none; /* esse none é para anular aopção de mexer no espaçamentp da caixa de comentário*/
+    padding-top: 15px; /* esse padding-top é para dizer que quero um paragrafo de 5px na caixa de comentário em cima e em baixo , na esquerda e na direita*/
+}
+/*itens de seleção do checkbox*/
+
+main .contact-form > div input[type="radio"], /*NÃO DÊ NUNCA ESPAÇO A MAIS DO QUE SE PEDE, POR CONTA DE UM ESPAÇO ENTRE A PALAVRA INPUT E AS CONCHETES, eu não estava conseguindo alinhar alinhar para a esquerda as informações*/ /* quando eu for citar o aributo de algum elemento, dealguma classe.. do esqueleto do meu html eu preciso  informar o atributo em colchetes no css é uma regra*/
+main .contact-form > div input[type="checkbox"]
+{  width: 25px;   /* aqui adicionei mais um item que quero que recba as mesmas especificações dessa classe, então para adicionar mais um item, preciso separar com uma ,  */
+    /*aqui vai mexer no espaçamento dos itens */
+
+
+}
+main .contact-form > div:nth-child(4) span/*significa que queremos pegar a quarta div do contact-form*/{
+    color: #25cbd3;
+
+}
+/*itens dos botoes enviar e redefinir*/
+
+main .contact-form > div input[type="submit"],
+main .contact-form > div input[type="reset"]{   
+    width: 100%; /*LARGURA*/
+    margin-bottom: 20px; /*Espaçamento entre o botão enviar e limpar=*/
+    border: none;/*borda anulada*/
+    text-transform: uppercase; /*deixar os textos do botão tudo maiusculo UPPERCASE é letra maiuscula*/
+    border-radius: 10px; /*deixar nosso botão/borda erredondado*/
+    font-size: 1.1 em; 
+}
+
+main .contact-form > div input[type="submit"] {
+    background-color: #3bd42d;
+    padding: 10px;
+
+}
+main .contact-form > div input[type="reset"] {
+    background-color: #5e49ff;
+}
+@media screen and (min-width:992px)/*aqui estamos aplicando o media screen para que a mesma paginarode em tamanhos de telas diferentes num limite de até 992px*/
+ {  main .contact-form{/*apartir daqui estamos aplicando uma borda para nosso querido formulário, segue atributos do formulário*/
+    width: 60%;
+    border: 1px solid #25cbd3;
+    border-radius: 20px;
+    padding: 25px; /*o PADDING é a margen, não se esqueça*/
+    margin: 25px auto; /*o MARGIN foi usado para centralizar o formulário para o meio, dando um espaço de 25px de um lado e de outro. o AUTO significa de AUTOMÁTICO */
+ }
+
+    main .contact-form input,
+    main .contact-form textarea
+    {   width: 95%;
+      
+    }
+    main .contact-form select {
+        width: 40%;
+    }
+    main .contact-form > div input[type="submit"],
+    main .contact-form > div input[type="reset"]{
+
+        width: auto; /*vai pegar somente a largura do conteúdo do botão quando estiver em telas de desktop*/
+        padding: 10px;/*vai estilizaro tamanho dos botoes para igualar*/
+        
+    }
+    main .contact-form > div input[type="submit"]{
+        margin-right: 20px; /*é o que esta dando espaço entre os botões enviar e limpar */
+    }
+
+}
