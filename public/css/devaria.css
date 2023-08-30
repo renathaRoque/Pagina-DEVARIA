@@ -31,16 +31,12 @@ h1.title /*todo h1 qe tenha a tag title*/ {
     text-align: center;
     
 }
-#video {
-    width: 100%;
-    text-align: center;
-    max-height: 92%;
-    display: inline-block;
-    border-radius: 3px;
-
- 
-    
+.margin-horizontal-20px/* Irá mexer no espaçamento dos meus inputs*/{ 
+    margin-left /* margin-left (margin esquerda) significa que eu quero que mecha na margin mais específica que é a da esquerda e da direita, não em cima e em baixo*/
+    : 20px;
+    margin-right: 20px; /* margin-right (margin direita)*/
 }
+
 @media screen and (min-width: 992px) {
     .width-50pct-desktop {
     

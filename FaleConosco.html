@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="public/css/header.css" /> <!-- aqui a gente está basicamente indicando as configurações da nossa pagina que ela receeberá uma estilização em CSS na pasta que criamos em public/css/index.css estnão estamos dizendo que temos uma folha de estilo neste arquivo-->
 	<link rel="stylesheet" href="public/css/devaria.css"/>
     <link rel="stylesheet" href="public/css/footer.css" />
+    <link rel="stylesheet" href="public/css/FaleConosco.css" />
+
 </head>
 <body>
     <header>
-        <a href="index.html" class="link-logo">
-            <img src="public/fotos/logo-devaria.svg" alt="logo" />
+            <a href="index.html" class="link-logo">
+                <img src="public/fotos/logo-devaria.svg" alt="logo" />
             </a>
         <nav class="menu">
             <ul>
@@ -22,43 +24,50 @@
         </nav>
     </header>
     <main>
-        <h1> Precisa entrar em contato?</h1>
-        <h2>Então preencha este formulário e clique em enviar:</h2>
-        <section>
-            <form action="index.html">
-                <p>
-                    <lable>Nome:</lable><input type="text" name="Nome"/>
-                </p>
-                <p>
-                    <label>E-mail:</label><input type="text" name="Email" />
-                </p>
-                <p>
-                    <lable>Comentário:</lable>
-                    <textarea name="Comentário" rows="4" cols="50"></textarea>
-                </p>
+        <h1 class="title text-center"> Precisa entrar em contato?</h1>
+        <h2 class="sub-title text-center">Então preencha este formulário e clique em enviar:</h2>
+            <form action="index.html" class="contact-form">
+                 <div>
+                        <label>Nome:</label>
+                        <input type="text" name="Nome" maxlength="70" required="true"/>
+                 </div>
+                 <div>
+                        <label>E-mail:</label>
+                        <input type="text" name="Email" maxlength="150" required="true"/>
+                 </div>
+                 <div>
+                        <label>Comentário:</label>
+                        <textarea name="Comentário" cols="50" rows="4" required="true"></textarea> <!-- são atributos esses de azul rgb o name,rows e cols (COLS signf COLUNA_). Atributos dO Elemento-->
+                 </div>
+                 <div>
+                        <label>Sexo:</label>
+                        <input type="radio" name="Sexo" /><span>Feminino</span> 
+                        <input type="radio" name="Sexo" /><span>Masculino</span>
+                 </div>
+                 <div>
+                        <label>Aonde nos conheceu?</label>
+                           <select name="Conheceu">
+                                <option select>Youtube</option>
+                                <option>Google</option>
+                                <option>Amigos</option>
+                                <option>Outros</option>
+                           </select>
+                 </div>
+                 <div>
+                    <input type="checkbox" name="Novidades" value="aceite"> <!-- aqui criei uma caixinha para a pessoa dar um check -->
+                    <span>Aceito receber novidades da Devaria</span>  <!-- CARA ESSE BENDITO DESSE SPAN que me permite alinhar o chackbox com a frase "Aceito receber novidades da Devaria"-->
+                 </div>
+                 <div>
+                        <input type="submit" name="Enviar" var="Enviar"/>
+                        <input type="reset" name="Limpar" var="Limpar"/>
+                 </div>
             </form>
-        </section>
-    </main>
-   <p>
-    <lable>Sexo:</lable>
-    <input type="radio" name="Sexo" /><lable>Feminino</lable>
-    <input type="radio" name="Sexo" /><lable>Masculino</lable>
-   </p>
-   <p>
-    <lable>Aonde nos conheceu?</lable>
-    <select name="Conheceu">
-        <option select>Youtube</option>
-        <option>Google</option>
-        <option>Amigos</option>
-        <option>Outros</option>
-    </form>
-    </select>
-   </p>
+  </main>
    <footer>
-    <section>
-      <span>contato@devaria.com.br</span><br/>
-      <span>Conhecça nosso canal no youtube</span>
-    </section>
-</footer>
+        <section>
+        <span>contato@devaria.com.br</span><br/>
+        <span>Conhecça nosso canal no youtube</span>
+        </section>
+  </footer>
 </body>
 </html>
